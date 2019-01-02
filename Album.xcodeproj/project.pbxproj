@@ -12,6 +12,7 @@
 		870F5A2E219897A800E8FB88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F5A2C219897A800E8FB88 /* Main.storyboard */; };
 		870F5A30219897AB00E8FB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870F5A2F219897AB00E8FB88 /* Assets.xcassets */; };
 		870F5A33219897AB00E8FB88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F5A31219897AB00E8FB88 /* LaunchScreen.storyboard */; };
+		87B6958C219F9B2B008DE353 /* ShakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6958B219F9B2B008DE353 /* ShakeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		870F5A2F219897AB00E8FB88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		870F5A32219897AB00E8FB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		870F5A34219897AB00E8FB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87B6958B219F9B2B008DE353 /* ShakeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				870F5A28219897A800E8FB88 /* AppDelegate.swift */,
 				870F5A2A219897A800E8FB88 /* ViewController.swift */,
+				87B6958B219F9B2B008DE353 /* ShakeButton.swift */,
 				870F5A2C219897A800E8FB88 /* Main.storyboard */,
 				870F5A2F219897AB00E8FB88 /* Assets.xcassets */,
 				870F5A31219897AB00E8FB88 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				870F5A2B219897A800E8FB88 /* ViewController.swift in Sources */,
+				87B6958C219F9B2B008DE353 /* ShakeButton.swift in Sources */,
 				870F5A29219897A800E8FB88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,14 +289,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74MSJWQ8TK;
 				INFOPLIST_FILE = Album/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Album;
+				PRODUCT_BUNDLE_IDENTIFIER = "-5.04.18";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,14 +308,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74MSJWQ8TK;
 				INFOPLIST_FILE = Album/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Album;
+				PRODUCT_BUNDLE_IDENTIFIER = "-5.04.18";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,93 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Album" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ACf-ID-DXM">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFv-8h-Ew8">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="557"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k22-sy-kYD" userLabel="PandaImageView1">
+                                                <rect key="frame" x="0.0" y="557" width="355" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q77-t1-cM3" userLabel="PandaImageView">
+                                                <rect key="frame" x="0.0" y="8" width="355" height="557"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="355" id="UYg-nP-Dsw"/>
+                                            <constraint firstAttribute="height" constant="557" id="d4y-Th-uaI"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ybj-LN-4cX">
+                                        <rect key="frame" x="0.0" y="557" width="355" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO1-ur-SaR" customClass="ShakeButton" customModule="Album" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="70"/>
+                                                <color key="backgroundColor" red="0.1191029424720869" green="0.68658194378984383" blue="0.95182966321243523" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.16840745046279784" green="0.24498319442144947" blue="0.75425032383419688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Предыдущий">
+                                                    <color key="titleColor" red="0.73854436528497414" green="0.023150951108357506" blue="0.56684679445754282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="previosButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZH7-Dz-RjS"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Panda1" translatesAutoresizingMaskIntoConstraints="NO" id="vZS-Ij-AMH">
+                                                <rect key="frame" x="118.5" y="0.0" width="118" height="70"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7If-wM-4s0" customClass="ShakeButton" customModule="Album" customModuleProvider="target">
+                                                <rect key="frame" x="236.5" y="0.0" width="118.5" height="70"/>
+                                                <color key="backgroundColor" red="0.0099708070421614357" green="0.73854436528497414" blue="0.1239671819453724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Следующий">
+                                                    <color key="titleColor" red="0.15625387946445249" green="0.018678496913026754" blue="0.64024044689119175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0V-5h-PE8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="6kg-kb-qnJ"/>
+                                            <constraint firstAttribute="width" constant="355" id="S1h-St-hG3"/>
+                                            <constraint firstAttribute="trailing" secondItem="7If-wM-4s0" secondAttribute="trailing" id="l1f-yG-gwp"/>
+                                            <constraint firstAttribute="height" constant="70" id="uUe-zD-q0y"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ACf-ID-DXM" secondAttribute="trailing" constant="10" id="2Zf-xU-KaZ"/>
+                            <constraint firstItem="ACf-ID-DXM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dLu-sZ-c7T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ACf-ID-DXM" secondAttribute="bottom" constant="10" id="hvg-Y8-nXr"/>
+                            <constraint firstItem="ACf-ID-DXM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="tNd-xh-tLu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="labelPanda" destination="vZS-Ij-AMH" id="cz4-5G-1zw"/>
+                        <outlet property="nextButton" destination="7If-wM-4s0" id="zcf-26-OFH"/>
+                        <outlet property="pandaImageView" destination="q77-t1-cM3" id="KMZ-iZ-QFJ"/>
+                        <outlet property="pandaImageView1" destination="q77-t1-cM3" id="E8U-rC-YjZ"/>
+                        <outlet property="previosButton" destination="hO1-ur-SaR" id="c8I-ua-CeD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-6865" y="-322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Panda1" width="300" height="168"/>
+    </resources>
 </document>
